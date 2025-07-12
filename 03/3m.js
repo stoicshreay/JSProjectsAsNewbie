@@ -1,5 +1,13 @@
 // const { createElement } = require("react")
 
+const dv = document.getElementById('d1')
+dv.style.backgroundColor="green"
+dv.style.color="white"
+setInterval(function(){
+    const dt = new Date
+    dv.innerHTML=dt.toLocaleTimeString()
+}, 1000);
+
 const bd=document.body
 const f1=document.getElementById("f1")
 const i1=document.getElementById("i1")
